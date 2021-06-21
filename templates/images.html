@@ -1,0 +1,117 @@
+{% load static %}
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="generator" content="Hugo 0.82.0">
+        <title>Escape</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap" rel="stylesheet">
+
+        <!-- <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/"> -->
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!-- Bootstrap core CSS -->
+        <!-- <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">  -->
+
+        <style>
+            h1 {
+                font-family: 'Montserrat', sans-serif;
+                text-align: center;
+                font-size: 40px;
+            }
+
+            h2 {
+                display: inline;
+                padding: 90px;
+            }
+
+            body {
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            a:link {
+                text-decoration: none;
+                color: black;
+                }
+
+            a:visited {
+                text-decoration: none; 
+                color: black;
+            }
+
+            a:hover {
+                text-decoration: none;
+                color: black;
+            }
+
+            a:active {
+                text-decoration: none;
+                color: black;
+            }
+
+            .bd-placeholder-img {
+                font-size: 1.125rem;
+                text-anchor: middle;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                user-select: none;
+            }
+
+            @media (min-width: 768px) {
+                .bd-placeholder-img-lg {
+                    font-size: 3.5rem;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1><a href="{% url 'home' %}">Escape</a></h1>
+        
+        <h2><a href="{% url 'videos' %}">Videos</a></h2>
+        <h2><a href="{% url 'stories' %}">Stories</a></h2>
+        <h2><a href="{% url 'gifs' %}">GIFs</a></h2>
+        <h2><a href="{% url 'explore' %}">Explore</a></h2>
+
+        <hr>
+
+        <div class="container"> 
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card card-body">
+                        <img src="{% static 'images/puppy.jfif' %}">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card card-body">
+
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card card-body">
+
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card card-body">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+    </body>
+    
+</html>
+
+
+
+
+
+
