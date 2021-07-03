@@ -1,1 +1,1 @@
-web: gunicorn backend.wsgi --log-file -
+web: gunicorn Escape_project.wsgi --log-file -
